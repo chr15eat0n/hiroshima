@@ -1,6 +1,9 @@
 body {
 
-color: white;
-background-color: grey;
+color: #dadfcd;
+background-color: #3f3f3f;
+padding: 100px 50px;
 
 }
+
+.hiddenDIV {visibility: hidden;}
