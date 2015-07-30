@@ -9,7 +9,7 @@ $(window).load(function() {
 $(document).ready(function(){
   $("#allBombs").ready(function(){
     for (i=0; i<15695;i++) {
-        $("#allBombs").append("<img src='imgs/bomb.png' width='100px'>");
+        $("#allBombs").append("<img src='imgs/Bomb.png' width='100px'>");
     }
   });
 
