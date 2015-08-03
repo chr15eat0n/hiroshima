@@ -113,6 +113,10 @@ img.countrybomb {
 @media only screen and (min-width: 600px) {
     /* For tablets: */
 
+  h2 {
+    font-size:2.5rem;
+  }
+
   h3 {
     font-size: 2rem;
   }
