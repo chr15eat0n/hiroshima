@@ -1,22 +1,45 @@
 <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <link rel="stylesheet" href="style.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 </head>
 <body>
-  <div class="loading">Loading</div>
-  <div id="intro" class="hiddenDIV">
-    <h2>70 years ago, on August 6, 1945, the military of the United States of America dropped a nuclear bomb on Hiroshima, Japan.</h2>
-    <h1>The blast and radiocative fallout killed more than 140,000 people.</h1>
-    <h2>Today's nuclear weapons are hundreds of times more powerful.</h2>
-    <h1>This is how many still exist:</h1>
+  <div id="slider"><a href="#outro"><strong>You have seen more than 1,000 bombs. To see them all keep scrolling or just click here, or keep scrolling.</strong></a></div>
+  <div id="wrapper">
+  <div id="intro">
+    <h3>70 years ago this week, on August 6 and 9, 1945, the US military dropped a nuclear bombs on Hiroshima and Nagasaki, Japan.</h3>
+    <h4>The bombings killed 225,000 people.</h4>
+    <h3>A single nuclear weapon today could easily kill 500,000 people.</h3>
+    <h4>This is how many there are:</h4>
   </Div>
+    <div id="loading"><img title="nuclear bomb" width="20px" src="imgs/greyBomb100px.gif"> LOADING <img title="nuclear bomb" width="25px" src="imgs/greyBomb100px.gif"></div>
   <div id="allBombs">
   </div>
   <div id="outro" class="hiddenDIV">
-    <h2>That's 15,695 nuclear weapons. Weapons ready to kill hundreds of millions of people.</h2>
-    <h1>Share this page if you think there should be zero.</h1>
+    <h3>That's 15,695 nuclear weapons. Enough to kill every single person on the planet.</h3>
+    <h2><em>Share this page if you think there should be ZERO.</em></h2>
+
+    <hr>
+    <div>
+      <p>Data via <a href="http://www.ploughshares.org/world-nuclear-stockpile-report" alt="Ploughshares Fund" title="Ploughshares Fund">Ploughshares Fund</a>, <a href="http://www.aasc.ucla.edu/cab/200708230009.html" title="UCLA's Children of the Atomic Bomb">UCLA's Children of the Atomic Bomb</a>, and <a href="http://nuclearsecrecy.com/nukemap/" title="NUKEMAP - a supercool tool visualizing potential nuclear detonations">NUKEMAP</a>.</p>
+      <p>If you found this page compelling, <a href="http://twitter.com/chr15_eat0n" title="follow me on twitter">follow me on twitter</a> AND <a title="Global Zero" href="https://www.globalzero.org/contribute">donate to my favorite nuclear disarmement campaign, Global Zero</a>. </p>
+      <p><em>Wondering who's got the nukes? Click on a country to display and compare their current stockpiles:</em><p>
+    </div>
+    <div class="countrywrapper">
+    <div class="country" ><img class="countrybomb" src="imgs/nokoreanbomblarge.gif" ><br /><button id="NKoreaButton" type="button">N. Korea</button><div id="NKoreaBombs"></div></div>
+    <div class="country" ><img class="countrybomb" src="imgs/israelbomblarge.gif"><br /><button id="IsraelButton" type="button">Israel</button><div id="IsraelBombs"></div></div>
+    <div class="country" ><img class="countrybomb" src="imgs/indiabomblarge.gif"><br /><button id="IndiaButton" type="button">India</button><div id="IndiaBombs"></div></div>
+    <div class="country" ><img class="countrybomb" src="imgs/pakistanbomblarge.gif"><br /><button id="PakistanButton" type="button">Pakistan</button><div id="PakistanBombs"></div></div>
+    <div class="country" ><img class="countrybomb" src="imgs/ukbombslarge.gif"><br /><button id="UKButton" type="button">U.K.</button><div id="UKBombs"></div></div>
+    <div class="country" ><img class="countrybomb" src="imgs/chinabomblarge.gif"><br /><button id="ChinaButton" type="button">China</button><div id="ChinaBombs"></div></div>
+    <div class="country" ><img class="countrybomb" src="imgs/frenchbomblarge.gif"><br /><button id="FranceButton" type="button">France</button><div id="FranceBombs"></div></div>
+    <div class="country" ><img class="countrybomb" src="imgs/usbomblarge.gif"><br /><button id="USButton" type="button">U.S.A.</button><div id="USBombs"></div></div>
+    <div class="country" ><img class="countrybomb" src="imgs/russianbomblarge.gif"><br /><button id="RussianButton" type="button">Russia</button><div id="RussiaBombs"></div></div>
+    </div>
+    <div class="clear"></div>
+    <hr>
+
   </div>
-  <script src="scripts.js"></script>
-
-
+</div>
+<script type="text/javascript" src="js/scripts.js"></script>
 </body>

@@ -1,9 +1,144 @@
+/* For mobile phones: */
+
 body {
 
-color: #dadfcd;
+font-family: Tahoma, Geneva, sans-serif;
+color: #a5a4a4;
 background-color: #3f3f3f;
-padding: 100px 50px;
+margin: 0px;
 
 }
 
+#wrapper {
+  width: 90%;
+  margin: auto;
+  padding-top: 50px;
+  padding-bottom: 50px;
+
+}
+
+a {
+  color: #a5a4a4;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+#slider {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  background-color: #a5a4a4;
+  opacity: .9;
+  border-top: 1px solid #737572;
+  text-align: center;
+  display: none;
+}
+
+#slider a {
+  color: #3f3f3f;
+  position:relative;
+
+}
+
+#loading {
+  padding: 50px;
+    -webkit-animation-name: blinker;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+
+    -moz-animation-name: blinker;
+    -moz-animation-duration: 2s;
+    -moz-animation-timing-function: linear;
+    -moz-animation-iteration-count: infinite;
+
+    animation-name: blinker;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@-moz-keyframes blinker {
+    0% { opacity: 2.0; }
+    50% { opacity: 0.0; }
+    100% { opacity: 2.0; }
+}
+
+@-webkit-keyframes blinker {
+    0% { opacity: 2.0; }
+    50% { opacity: 0.0; }
+    100% { opacity: 2.0; }
+}
+
+@keyframes blinker {
+    0% { opacity: 2.0; }
+    50% { opacity: 0.0; }
+    100% { opacity: 2.0; }
+}
+
 .hiddenDIV {visibility: hidden;}
+
+img.bomb {
+  width: 20%;
+}
+
+button {
+  margin-bottom: 10px;
+}
+
+img.countrybomb {
+  width: 50%;
+}
+
+.countrywrapper {
+  text-align: center;
+  margin: auto;
+}
+
+.country {
+  float:left;
+  width: 100%;
+  text-align: center;
+
+}
+
+.clear {
+  clear:both;
+}
+
+@media only screen and (min-width: 600px) {
+    /* For tablets: */
+
+  h3 {
+    font-size: 2rem;
+  }
+
+  h4 {
+    font-size: 1.5rem;
+  }
+
+  img.bomb {
+    width: 100px;
+  }
+
+  img.countrybomb {
+    width:100%;
+  }
+
+  .country {
+    width:20%;
+  }
+
+}
+@media only screen and (min-width: 768px) {
+        /* For desktop: */
+
+        .country {
+          width:11%;
+        }
+
+}
