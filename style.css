@@ -82,6 +82,10 @@ a:hover {
 
 .hiddenDIV {visibility: hidden;}
 
+.share {
+  text-align: center;
+}
+
 img.bomb {
   width: 20%;
 }

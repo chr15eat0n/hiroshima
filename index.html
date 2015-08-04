@@ -1,16 +1,63 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <!-- Basic Page Needs
+  ================================================== -->
+	<meta charset="utf-8">
+	<title>How Many Bombs?</title>
+	<meta name="description" content="Today, a single nuclear weapon could kill over 500,000 people. This is how many exist today:">
+	<meta name="author" content="chr15_eat0n">
+   <meta name="keywords" content="Hiroshima, Nagasaki, Hiroshima anniversary, Nagasai anniversary, nuclear, nuclear weapon, atomic, a bomb, atomic bomb, nuclear stockpile, infographic">
+
+	<!-- Mobile Specific Metas
+  ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- CSS
+  ================================================== -->
   <link rel="stylesheet" href="style.css">
+
+  <!-- Favicons
+	================================================== -->
+	<link rel="shortcut icon" href="imgs/favicon.ico">
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+  <meta property="og:title" content="How Many Bombs?" />
+    <meta property="og:description" content="On the 70th anniversary of Hiroshima and Nagasaki, this is something you have to see." />
+    <meta property="og:image" content="imgs/greyBombforfb.png" />
+    <meta property="og:url" content="http://www.howmanybombs.com" />
+
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-65951765-1', 'auto');
+      ga('send', 'pageview');
+
+    </script>
 </head>
 <body>
+  <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.4&appId=342369169152725";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
   <div id="slider"><a href="#outro"><strong>That's more than 1,000 bombs. Click here or keep scrolling to see them all.</strong></a></div>
   <div id="wrapper">
   <div id="intro">
-    <h4>August 6 and 9, 1945. The US military drops nuclear bombs on Hiroshima and Nagasaki.</h4>
-    <h3>225,000 people die.</h3>
-    <h4>70 years later, a single nuclear weapon could easily kill 500,000 people.</h4>
-    <h3>This is how many there are:</h3>
+    <h3>On August 6th and 9th 70 years ago, the US military dropped nuclear bombs on Hiroshima and Nagasaki.</h4>
+    <h4>225,000 people died.</h4>
+    <h3>Today, a single nuclear weapon could kill over 500,000 people.</h3>
+    <h4>There are this many nuclear weapons in the world, think of each as 500,000 lives:</h4>
   </Div>
     <div id="loading"><img title="nuclear bomb" width="20px" src="imgs/greyBomb100px.gif"> LOADING <img title="nuclear bomb" width="25px" src="imgs/greyBomb100px.gif"></div>
   <div id="allBombs">
@@ -18,11 +65,13 @@
   <div id="outro" class="hiddenDIV">
     <h3>That's 15,695 nuclear weapons. Enough to kill every single person on the planet.</h3>
     <h2><em>Share this page if you think there should be ZERO.</em></h2>
-
+    <div class="fb-share-button" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button_count"></div><a href="https://twitter.com/share" class="twitter-share-button" data-url="http://www.howmanybombs.com" data-text="70 years after #Hiroshima and #Nagasaki, this is how many nuclear weapons there are in the world:">Tweet</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+    <br />
     <hr>
     <div>
       <p>Data via <a href="http://www.ploughshares.org/world-nuclear-stockpile-report" alt="Ploughshares Fund" title="Ploughshares Fund">Ploughshares Fund</a>, <a href="http://www.aasc.ucla.edu/cab/200708230009.html" title="UCLA's Children of the Atomic Bomb">UCLA's Children of the Atomic Bomb</a>, and <a href="http://nuclearsecrecy.com/nukemap/" title="NUKEMAP - a supercool tool visualizing potential nuclear detonations">NUKEMAP</a>.</p>
-      <p>If you found this page compelling, <a href="http://twitter.com/chr15_eat0n" title="follow me on twitter">follow me on twitter</a> AND <a title="Global Zero" href="https://www.globalzero.org/contribute">donate to my favorite nuclear disarmement campaign, Global Zero</a>. </p>
+      <p>If you found this page compelling, <a href="http://twitter.com/chr15_eat0n" title="follow me on twitter">follow me on twitter</a> (where you can also let me know if you find any bugs).<a title="Global Zero" href="https://www.globalzero.org/contribute">Click here to donate to my favorite nuclear disarmement campaign, Global Zero</a>. </p>
       <p><em>Wondering who's got the nukes? Click on a country to display and compare their current stockpiles:</em><p>
     </div>
     <div class="countrywrapper">
