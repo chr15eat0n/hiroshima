@@ -86,6 +86,8 @@ a:hover {
   text-align: center;
 }
 
+.twitter-share-button[style] { vertical-align: text-bottom !important; }
+
 img.bomb {
   width: 20%;
 }
