@@ -102,6 +102,7 @@ img.bomb {
 
 .share-button-container p{
     margin:0px 0 10px 0;
+    padding: 10px;
 }
 
 .share-button {
@@ -111,6 +112,7 @@ img.bomb {
 
 .share-button a{
     text-decoration:none;
+
 }
 
 .share-button, .share-button .count{
@@ -129,10 +131,12 @@ img.bomb {
     opacity: .85;
     color:#333;
     font-size:1.9rem;
-    line-height:145%;
+    line-height:130%;
     margin-left:4px;
     text-transform:uppercase;
     min-width:40px;
+    padding: 2px;
+    
 }
 
 .share-button .share {

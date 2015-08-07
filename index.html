@@ -66,22 +66,57 @@
     <h3>That's 15,695 nuclear weapons. Enough to kill every single person on the planet.</h3>
     <h2><em>Share this page if you think there should be ZERO.</em></h2>
     <div class="share-button share-button-facebook" data-share-url="http://www.howmanybombs.com">
-    <div class="box">
-        <a href="https://www.facebook.com/sharer/sharer.php?u=http://www.howmanybombs.com">
-            <span class='share'>Share</span>
-            
-        </a>
+        <div class="box">
+            <a href="https://www.facebook.com/sharer/sharer.php?u=http://www.howmanybombs.com">
+                <span class='share'>Share</span>
+                <span class='count'>0<span>
+            </a>
+        </div>
     </div>
-</div>
-<div class="share-button share-button-twitter" data-share-url="http://www.howmanybombs.com">
-			<div clas="box">
-				<a href="http://twitter.com/share?url=http%3A%2F%2Fwww.howmanybombs.com&text=70%20years%20after%20%23Hiroshima%2C%20this%20data%20visualization%20shows%20how%20far%20we%20have%20left%20to%20%23EliminateNukes%3A%20" target="_blank">
-					<span class="share">Tweet</span>
+    <div class="share-button share-button-twitter" data-share-url="http://www.howmanybombs.com">
+    			<div clas="box">
+    				<a href="http://twitter.com/share?url=http%3A%2F%2Fwww.howmanybombs.com&text=70%20years%20after%20Hiroshima%20and%20%23Nagasaki%2C%20data%20visualization%20shows%20all%20the%20bombs%20still%20out%20there%3A&hashtags=EliminateNukes" target="_blank">
+    					<span class="share">Tweet</span>
+              <span class='count'>0<span>
 
+    				</a>
+    			</div>
+    		</div>
+        <script type='text/javascript'>
+        var StaticShareButtons = {
+            twitterButton: document.querySelector('.share-button-twitter'),
+            facebookButton: document.querySelector('.share-button-facebook'),
 
-				</a>
-			</div>
-		</div>
+            init: function(){
+                this.injectScript('http://urls.api.twitter.com/1/urls/count.json?url=' +
+                    escape(this.twitterButton.dataset.shareUrl) + '&callback=' + 'StaticShareButtons.processTwitter');
+
+                this.injectScript('http://graph.facebook.com/?id='+
+                    escape(this.facebookButton.dataset.shareUrl) +'&callback=StaticShareButtons.processFacebook');
+            },
+
+            injectScript: function(url){
+                var script = document.createElement('script');
+                script.async = true;
+                script.src = url;
+                document.body.appendChild(script);
+            },
+
+            processTwitter: function(data){
+                if(data.count != undefined){
+                    this.twitterButton.querySelector('.count').innerHTML = data.count;
+                }
+            },
+
+            processFacebook: function(data){
+                if(data.shares != undefined){
+                    this.facebookButton.querySelector('.count').innerHTML = data.shares;
+                }
+            }
+        }
+
+        StaticShareButtons.init();
+        </script>
 <br />
     <hr>
     <div>
