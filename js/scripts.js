@@ -5,7 +5,7 @@ $(document).ready(function(){
   function makeBombs() {
 
     var html = [];
-    for (var i = 0; i < 15375; i++) {
+    for (var i = 0; i < 14900; i++) {
       html.push("<img alt='bomb' class='bomb' src='imgs/greyBomb100px.gif'>");
     }
 
@@ -128,20 +128,20 @@ $(document).ready(function(){
 
   $("#USButton").one('click', function(){
 
-    for (i=0; i<6970;i++) {
+    for (i=0; i<6800;i++) {
       $("#USBombs").prepend("<img src='imgs/USBomb.gif' width='25%'>");
 
     }
 
-    $("#USBombs").append("<p>6,970 Nuclear Weapons</p>");
+    $("#USBombs").append("<p>6,800 Nuclear Weapons</p>");
   });
 
   $("#RussianButton").one('click', function(){
 
-    for (i=0; i<7300;i++) {
+    for (i=0; i<7000;i++) {
       $("#RussiaBombs").prepend("<img src='imgs/RussiaBomb.gif' width='25%'>");
     }
-    $("#RussiaBombs").append("<p>7,300 Nuclear Weapons</p>");
+    $("#RussiaBombs").append("<p>7,000 Nuclear Weapons</p>");
   });
 
 
