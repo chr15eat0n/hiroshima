@@ -52,7 +52,7 @@ $(document).ready(function(){
   /* Generate small bombs for each country on button click */
 
   $("#NKoreaButton").one('click', function(){
-    $("#NKoreaBombs").after("<p>Less than 15 Nuclear Weapons</p>");
+    $("#NKoreaBombs").after("<p>Less than 20 Nuclear Weapons</p>");
     for (i=0; i<20;i++) {
       $("#NKoreaBombs").delay(100).queue(function (next) {
         $(this).after("<img src='imgs/NKoreaBomb.gif' width='25%'>");
@@ -90,7 +90,7 @@ $(document).ready(function(){
         next();
       });
     }
-    $("#PakistanBombs").after("<p>130 Nuclear Weapons</p>");
+    $("#PakistanBombs").after("<p>150 Nuclear Weapons</p>");
   });
 
   $("#UKButton").one('click', function(){
@@ -112,7 +112,7 @@ $(document).ready(function(){
         next();
       });
     }
-    $("#ChinaBombs").after("<p>260 Nuclear Weapons</p>");
+    $("#ChinaBombs").after("<p>290 Nuclear Weapons</p>");
   });
 
   $("#FranceButton").one('click', function(){
@@ -133,7 +133,7 @@ $(document).ready(function(){
 
     }
 
-    $("#USBombs").append("<p>6,800 Nuclear Weapons</p>");
+    $("#USBombs").append("<p>,5800 Nuclear Weapons</p>");
   });
 
   $("#RussianButton").one('click', function(){
@@ -141,7 +141,7 @@ $(document).ready(function(){
     for (i=0; i<6370;i++) {
       $("#RussiaBombs").prepend("<img src='imgs/RussiaBomb.gif' width='25%'>");
     }
-    $("#RussiaBombs").append("<p>7,000 Nuclear Weapons</p>");
+    $("#RussiaBombs").append("<p>6370 Nuclear Weapons</p>");
   });
 
 
