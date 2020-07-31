@@ -133,7 +133,7 @@ $(document).ready(function(){
 
     }
 
-    $("#USBombs").append("<p>,5800 Nuclear Weapons</p>");
+    $("#USBombs").append("<p>5800 Nuclear Weapons</p>");
   });
 
   $("#RussianButton").one('click', function(){
