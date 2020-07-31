@@ -5,7 +5,7 @@ $(document).ready(function(){
   function makeBombs() {
 
     var html = [];
-    for (var i = 0; i < 14900; i++) {
+    for (var i = 0; i < 13355; i++) {
       html.push("<img alt='bomb' class='bomb' src='imgs/greyBomb100px.gif'>");
     }
 
@@ -53,7 +53,7 @@ $(document).ready(function(){
 
   $("#NKoreaButton").one('click', function(){
     $("#NKoreaBombs").after("<p>Less than 15 Nuclear Weapons</p>");
-    for (i=0; i<15;i++) {
+    for (i=0; i<20;i++) {
       $("#NKoreaBombs").delay(100).queue(function (next) {
         $(this).after("<img src='imgs/NKoreaBomb.gif' width='25%'>");
         next();
@@ -73,7 +73,7 @@ $(document).ready(function(){
 
   $("#IndiaButton").one('click', function(){
 
-    for (i=0; i<120;i++) {
+    for (i=0; i<130;i++) {
       $("#IndiaBombs").delay(50).queue(function (next) {
         $(this).after("<img src='imgs/IndiaBomb.gif' width='25%'>");
         next();
@@ -84,7 +84,7 @@ $(document).ready(function(){
 
   $("#PakistanButton").one('click', function(){
 
-    for (i=0; i<130;i++) {
+    for (i=0; i<150;i++) {
       $("#PakistanBombs").delay(50).queue(function (next) {
         $(this).after("<img src='imgs/PakistanBomb.gif' width='25%'>");
         next();
@@ -106,7 +106,7 @@ $(document).ready(function(){
 
   $("#ChinaButton").one('click', function(){
 
-    for (i=0; i<260;i++) {
+    for (i=0; i<290;i++) {
       $("#ChinaBombs").delay(25).queue(function (next) {
         $(this).after("<img src='imgs/ChinaBomb.gif' width='25%'>");
         next();
@@ -128,7 +128,7 @@ $(document).ready(function(){
 
   $("#USButton").one('click', function(){
 
-    for (i=0; i<6800;i++) {
+    for (i=0; i<5800;i++) {
       $("#USBombs").prepend("<img src='imgs/USBomb.gif' width='25%'>");
 
     }
@@ -138,7 +138,7 @@ $(document).ready(function(){
 
   $("#RussianButton").one('click', function(){
 
-    for (i=0; i<7000;i++) {
+    for (i=0; i<6370;i++) {
       $("#RussiaBombs").prepend("<img src='imgs/RussiaBomb.gif' width='25%'>");
     }
     $("#RussiaBombs").append("<p>7,000 Nuclear Weapons</p>");
