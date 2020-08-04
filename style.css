@@ -86,7 +86,7 @@ a:hover {
   text-align: center;
 }
 
-.twitter-share-button[style] { vertical-align: text-bottom !important; }
+
 
 img.bomb {
   width: 20%;
@@ -136,7 +136,7 @@ img.bomb {
     text-transform:uppercase;
     min-width:40px;
     padding: 2px;
-    
+
 }
 
 .share-button .share {

@@ -31,6 +31,13 @@
     <meta property="og:image" content="http://www.howmanybombs.com/imgs/greyBombbigforfb.png" />
     <meta property="og:url" content="http://www.howmanybombs.com" />
 
+		<meta name="twitter:card" content="summary_large_image">
+		<meta name="twitter:site" content="@chr15_eat0n">
+		<meta name="twitter:creator" content="@chr15_eat0n">
+		<meta name="twitter:title" content="howmanybombs.com">
+		<meta name="twitter:description" content="It's been 75 years since Hiroshima and Nagasaki. Can you visualize all the nuclear weapons left on the planet?">
+		<meta name="twitter:image" content="http://www.howmanybombs.com/imgs/greyBombbigforfb.png">
+
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -43,14 +50,10 @@
     </script>
 </head>
 <body>
-  <div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.4&appId=342369169152725";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
+	<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v7.0" nonce="1Fo64d0f"></script>
+
+
   <div id="slider"><a href="#outro"><strong>That's more than 1,000 bombs. Click here or keep scrolling to see them all.</strong></a></div>
   <div id="wrapper">
   <div id="intro">
@@ -65,58 +68,18 @@
   <div id="outro" class="hiddenDIV">
     <h3>That's 13,355 nuclear weapons. Enough to kill every single person on the planet.</h3>
     <h2><em>Share this page if you think there should be ZERO.</em></h2>
-		<div class="share-button share-button-twitter" data-share-url="http://www.howmanybombs.com">
-					<div clas="box">
-						<a href="http://twitter.com/share?url=http%3A%2F%2Fwww.howmanybombs.com&text=75%20years%20after%20Hiroshima%20and%20%23Nagasaki%2C%20data%20visualization%20shows%20all%20the%20bombs%20still%20out%20there%3A&hashtags=EliminateNukes" target="_blank">
-							<span class="share">Tweet</span>
+		<div>
+					<div>	<a class="twitter-share-button"
+  					href="http://twitter.com/intent/tweet?text=75%20years%20after%20Hiroshima%20and%20%23Nagasaki%2C%20data%20visualization%20shows%20all%20the%20bombs%20still%20out%20there%3A&url=http%3A%2F%2Fwww.howmanybombs.com"
+  					data-size="large" data-show-count="true">
+						Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></div>
 
 
-						</a>
-					</div>
-				</div>
-		<div class="share-button share-button-facebook" data-share-url="http://www.howmanybombs.com">
-        <div class="box">
-            <a href="https://www.facebook.com/sharer/sharer.php?u=http://www.howmanybombs.com">
-                <span class='share'>Share</span>
-            </a>
-        </div>
+
+		<div class="fb-share-button" data-href="http://howmanybombs.com" data-layout="button_count" data-size="large"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fhowmanybombs.com%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share</a></div>
     </div>
 
-        <script type='text/javascript'>
-        var StaticShareButtons = {
-            twitterButton: document.querySelector('.share-button-twitter'),
-            facebookButton: document.querySelector('.share-button-facebook'),
 
-            init: function(){
-                this.injectScript('http://urls.api.twitter.com/1/urls/count.json?url=' +
-                    escape(this.twitterButton.dataset.shareUrl) + '&callback=' + 'StaticShareButtons.processTwitter');
-
-                this.injectScript('http://graph.facebook.com/?id='+
-                    escape(this.facebookButton.dataset.shareUrl) +'&callback=StaticShareButtons.processFacebook');
-            },
-
-            injectScript: function(url){
-                var script = document.createElement('script');
-                script.async = true;
-                script.src = url;
-                document.body.appendChild(script);
-            },
-
-            processTwitter: function(data){
-                if(data.count != undefined){
-                    this.twitterButton.querySelector('.count').innerHTML = data.count;
-                }
-            },
-
-            processFacebook: function(data){
-                if(data.shares != undefined){
-                    this.facebookButton.querySelector('.count').innerHTML = data.shares;
-                }
-            }
-        }
-
-        StaticShareButtons.init();
-        </script>
 <br />
     <hr>
     <div>
