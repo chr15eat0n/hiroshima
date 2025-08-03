@@ -5,7 +5,7 @@ $(document).ready(function(){
   function makeBombs() {
 
     var html = [];
-    for (var i = 0; i < 13355; i++) {
+    for (var i = 0; i < 12,121; i++) {
       html.push("<img alt='bomb' class='bomb' src='imgs/greyBomb100px.gif'>");
     }
 
@@ -52,8 +52,8 @@ $(document).ready(function(){
   /* Generate small bombs for each country on button click */
 
   $("#NKoreaButton").one('click', function(){
-    $("#NKoreaBombs").after("<p>Less than 20 Nuclear Weapons</p>");
-    for (i=0; i<20;i++) {
+    $("#NKoreaBombs").after("<p>50 Nuclear Weapons</p>");
+    for (i=0; i<50;i++) {
       $("#NKoreaBombs").delay(100).queue(function (next) {
         $(this).after("<img src='imgs/NKoreaBomb.gif' width='25%'>");
         next();
@@ -62,8 +62,8 @@ $(document).ready(function(){
   });
 
   $("#IsraelButton").one('click', function(){
-    $("#IsraelBombs").after("<p>80 Nuclear Weapons</p>");
-    for (i=0; i<80;i++) {
+    $("#IsraelBombs").after("<p>90 Nuclear Weapons</p>");
+    for (i=0; i<90;i++) {
       $("#IsraelBombs").delay(50).queue(function (next) {
         $(this).after("<img src='imgs/IsrealBomb.gif' width='25%'>");
         next();
@@ -73,75 +73,75 @@ $(document).ready(function(){
 
   $("#IndiaButton").one('click', function(){
 
-    for (i=0; i<130;i++) {
+    for (i=0; i<172;i++) {
       $("#IndiaBombs").delay(50).queue(function (next) {
         $(this).after("<img src='imgs/IndiaBomb.gif' width='25%'>");
         next();
       });
     }
-    $("#IndiaBombs").after("<p>130 Nuclear Weapons</p>");
+    $("#IndiaBombs").after("<p>172 Nuclear Weapons</p>");
   });
 
   $("#PakistanButton").one('click', function(){
 
-    for (i=0; i<150;i++) {
+    for (i=0; i<170;i++) {
       $("#PakistanBombs").delay(50).queue(function (next) {
         $(this).after("<img src='imgs/PakistanBomb.gif' width='25%'>");
         next();
       });
     }
-    $("#PakistanBombs").after("<p>150 Nuclear Weapons</p>");
+    $("#PakistanBombs").after("<p>170 Nuclear Weapons</p>");
   });
 
   $("#UKButton").one('click', function(){
 
-    for (i=0; i<215;i++) {
+    for (i=0; i<225;i++) {
       $("#UKBombs").delay(25).queue(function (next) {
         $(this).after("<img src='imgs/UKBomb.gif' width='25%'>");
         next();
       });
     }
-    $("#UKBombs").after("<p>215 Nuclear Weapons</p>");
+    $("#UKBombs").after("<p>225 Nuclear Weapons</p>");
   });
 
   $("#ChinaButton").one('click', function(){
 
-    for (i=0; i<290;i++) {
+    for (i=0; i<410;i++) {
       $("#ChinaBombs").delay(25).queue(function (next) {
         $(this).after("<img src='imgs/ChinaBomb.gif' width='25%'>");
         next();
       });
     }
-    $("#ChinaBombs").after("<p>290 Nuclear Weapons</p>");
+    $("#ChinaBombs").after("<p>410 Nuclear Weapons</p>");
   });
 
   $("#FranceButton").one('click', function(){
 
-    for (i=0; i<300;i++) {
+    for (i=0; i<290;i++) {
       $("#FranceBombs").delay(25).queue(function (next) {
         $(this).after("<img src='imgs/FrenchBomb.gif' width='25%'>");
         next();
       });
     }
-    $("#FranceBombs").after("<p>300 Nuclear Weapons</p>");
+    $("#FranceBombs").after("<p>290 Nuclear Weapons</p>");
   });
 
   $("#USButton").one('click', function(){
 
-    for (i=0; i<5800;i++) {
+    for (i=0; i<3708;i++) {
       $("#USBombs").prepend("<img src='imgs/USBomb.gif' width='25%'>");
 
     }
 
-    $("#USBombs").append("<p>5800 Nuclear Weapons</p>");
+    $("#USBombs").append("<p>3708 Nuclear Weapons</p>");
   });
 
   $("#RussianButton").one('click', function(){
 
-    for (i=0; i<6370;i++) {
+    for (i=0; i<4380;i++) {
       $("#RussiaBombs").prepend("<img src='imgs/RussiaBomb.gif' width='25%'>");
     }
-    $("#RussiaBombs").append("<p>6370 Nuclear Weapons</p>");
+    $("#RussiaBombs").append("<p>4380 Nuclear Weapons</p>");
   });
 
 
