@@ -30,7 +30,7 @@ $(document).ready(function(){
     var top = $(document).scrollTop();
 
     if (top > 10000) $("#slider").slideDown();
-    if (top > 70000) $("#slider").addClass("hiddenDIV");
+    if (top > 60000) $("#slider").addClass("hiddenDIV");
 
   });
 
