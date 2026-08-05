@@ -5,7 +5,7 @@ $(document).ready(function(){
   function makeBombs() {
 
     var html = [];
-    for (var i = 0; i < 12121; i++) {
+    for (var i = 0; i < 12187; i++) {
       html.push("<img alt='bomb' class='bomb' src='imgs/greyBomb100px.gif'>");
     }
 
@@ -52,8 +52,8 @@ $(document).ready(function(){
   /* Generate small bombs for each country on button click */
 
   $("#NKoreaButton").one('click', function(){
-    $("#NKoreaBombs").after("<p>50 Nuclear Weapons</p>");
-    for (i=0; i<50;i++) {
+    $("#NKoreaBombs").after("<p>60 Nuclear Weapons</p>");
+    for (i=0; i<60;i++) {
       $("#NKoreaBombs").delay(100).queue(function (next) {
         $(this).after("<img src='imgs/NKoreaBomb.gif' width='25%'>");
         next();
@@ -73,7 +73,7 @@ $(document).ready(function(){
 
   $("#IndiaButton").one('click', function(){
 
-    for (i=0; i<172;i++) {
+    for (i=0; i<190;i++) {
       $("#IndiaBombs").delay(50).queue(function (next) {
         $(this).after("<img src='imgs/IndiaBomb.gif' width='25%'>");
         next();
@@ -106,13 +106,13 @@ $(document).ready(function(){
 
   $("#ChinaButton").one('click', function(){
 
-    for (i=0; i<410;i++) {
+    for (i=0; i<620;i++) {
       $("#ChinaBombs").delay(25).queue(function (next) {
         $(this).after("<img src='imgs/ChinaBomb.gif' width='25%'>");
         next();
       });
     }
-    $("#ChinaBombs").after("<p>410 Nuclear Weapons</p>");
+    $("#ChinaBombs").after("<p>620 Nuclear Weapons</p>");
   });
 
   $("#FranceButton").one('click', function(){
@@ -128,20 +128,20 @@ $(document).ready(function(){
 
   $("#USButton").one('click', function(){
 
-    for (i=0; i<3708;i++) {
+    for (i=0; i<3700;i++) {
       $("#USBombs").prepend("<img src='imgs/USBomb.gif' width='25%'>");
 
     }
 
-    $("#USBombs").append("<p>3708 Nuclear Weapons</p>");
+    $("#USBombs").append("<p>3700 Nuclear Weapons</p>");
   });
 
   $("#RussianButton").one('click', function(){
 
-    for (i=0; i<4380;i++) {
+    for (i=0; i<4400;i++) {
       $("#RussiaBombs").prepend("<img src='imgs/RussiaBomb.gif' width='25%'>");
     }
-    $("#RussiaBombs").append("<p>4380 Nuclear Weapons</p>");
+    $("#RussiaBombs").append("<p>4400 Nuclear Weapons</p>");
   });
 
 
