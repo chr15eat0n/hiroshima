@@ -79,7 +79,7 @@ $(document).ready(function(){
         next();
       });
     }
-    $("#IndiaBombs").after("<p>172 Nuclear Weapons</p>");
+    $("#IndiaBombs").after("<p>190 Nuclear Weapons</p>");
   });
 
   $("#PakistanButton").one('click', function(){
